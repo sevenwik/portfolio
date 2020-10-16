@@ -7,20 +7,33 @@ module.exports = {
       'public/**/*.html',
     ],
     theme: {
-      boxshadow:{
-        '2xl': '-17px 16px 35px 0px rgba(0,0,0,1)'
+      colors:{
+        blue: '#e7dec8',
+        darkBlue: '#cbaf87',
+        gray: '#edf2f7',
+        white: '#fff'
+
+      },
+      borderRadius:{
+        'full':'9999px',
+        2:'9990px'
+      },
+      boxShadow:{
+        1: '-17px 16px 60px -15px rgba(0, 0, 0, 0.7)',
+
 
       },
       extend: {
         fontFamily: {
-          'body': ['Poppins']
+          'name': ['Poppins'],
+          'role': ['Playfair Displa'],          
         },
         animation: {
                     'spin-slow': 'spin 3s linear infinite',
                     }
       },
       screens:{
-          'sm':'360px',
+          'sm':'240px',
           'lg':'800px'
       }
     },
