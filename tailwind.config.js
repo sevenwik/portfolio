@@ -25,8 +25,8 @@ module.exports = {
       },
       extend: {
         fontFamily: {
-          'name': ['Poppins'],
-          'role': ['Playfair Displa'],          
+          'name': ['Abril Fatface'],
+          'role': ['Playfair Display'],          
         },
         animation: {
                     'spin-slow': 'spin 3s linear infinite',
