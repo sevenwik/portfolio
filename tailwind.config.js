@@ -8,7 +8,8 @@ module.exports = {
   ],
   theme: {
     colors:{
-      blue: '#e7dec8',
+      blue: '#d9caa7',
+      light:'#e7dec8',
       darkBlue: '#cbaf87',
       gray: '#edf2f7',
       white: '#fff'
@@ -33,13 +34,23 @@ module.exports = {
                   'spin-slow': 'spin 3s linear infinite',
                   },
       margin:{
-        '30':'10%',
-        '50':'40%'
+        '30':'30%',
+        '50':'50%'
+      },
+      height:{
+        '50':'20%',
+        '90':'30rem'
+      },
+      padding:{
+        '50':'5%'
       }
     },
     screens:{
-        'sm':'240px',
-        'lg':'800px'
+        'xs':'320px',
+        'sm':'640px',
+        'md':'641px',
+        'lg':'1024px'
+        
     }
   },
   variants: {},
