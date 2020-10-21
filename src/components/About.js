@@ -40,9 +40,9 @@ function About() {
     <div className="overflow-x-scoll lg:h-screen relative bg-light">
       <div class="lg:visible md:visible sticky top-0 flex flex-wrap xs:bg-darkBlue md:bg-light p-4 font-bold font-role text-xl">
         <div className="flex mx-auto">
-          <div className="flex-1 text-center hover:text-gray-700 lg:pr-24 xs:pr-10">Resume</div>
-          <div className="flex-1 text-center hover:text-gray-700 ">Projects</div>
-          <div className="flex-1 text-center hover:text-gray-700 lg:pl-24 xs:pl-10">Contact</div>
+        <div className="flex-1 text-center border-b-2 border-transparent hover:border-gray-700 lg:px-16 xs:px-6">Resume</div>
+          <div className="flex-1 text-center border-b-2 border-transparent hover:border-gray-700 lg:px-16 xs:px-6">Projects</div>
+          <div className="flex-1 text-center border-b-2 border-transparent hover:border-gray-700 lg:px-16 xs:px-6">Contact</div>
         </div>
       </div>
       <div className="flex flex-col sm:flex-row">
