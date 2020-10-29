@@ -7,6 +7,8 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import {faEnvelope} from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import hr from './hr.png'
+import Resume from './Resume'
+
 
 const MagicOcean = [
   "Vanakkam",
@@ -36,19 +38,20 @@ function About() {
 
 
   return (
-    <div>
-    <div className="overflow-x-scoll lg:h-screen relative bg-light">
-      <div class="lg:visible md:visible sticky top-0 flex flex-wrap xs:bg-darkBlue md:bg-light p-4 font-bold font-role text-xl">
+    <div className="relative">
+      <nav class="sticky top-0 flex flex-wrap xs:bg-darkCoffee md:bg-light p-4 font-bold font-role text-xl">
         <div className="flex mx-auto">
-        <div className="flex-1 text-center border-b-2 border-transparent hover:border-gray-700 lg:px-16 xs:px-6">Resume</div>
+          <a href="#resume"><div className="flex-1 text-center border-b-2 border-transparent hover:border-gray-700 lg:px-16 xs:px-6">Resume</div></a>
           <div className="flex-1 text-center border-b-2 border-transparent hover:border-gray-700 lg:px-16 xs:px-6">Projects</div>
           <div className="flex-1 text-center border-b-2 border-transparent hover:border-gray-700 lg:px-16 xs:px-6">Contact</div>
         </div>
-      </div>
+      </nav>
+    <div className="overflow-x-scoll bg-light">
+ 
       <div className="flex flex-col sm:flex-row">
         <div className="sm:w-1/3 lg:w-2/5 md:w-1/2 text-center sm:pr-8">
-          <div className="xs:w-screen xs:h-64 md:h-0 bg-darkBlue"></div>
-            <div className="inset-x-0 top-0 xs:mt-12 xs:absolute md:static sm:static lg:static xs:w-4/5 lg:w-2/3 md:w-4/5 lg:my-16 lg:ml-24 md:ml-12 md:mt-16 xs:mt-20 xs:mx-auto bg-blue rounded-lg items-center jutify-center overflow-hidden shadow-1">
+          <div className="xs:w-screen xs:h-64 md:h-0 bg-darkCoffee"></div>
+            <div className="inset-x-0 top-0 xs:mt-12 xs:absolute md:static sm:static lg:static xs:w-4/5 lg:w-2/3 md:w-4/5 lg:my-16 lg:ml-24 md:ml-12 md:mt-16 xs:mt-20 xs:mx-auto bg-coffee rounded-lg items-center jutify-center overflow-hidden shadow-1">
               <img className="rounded-full mx-auto lg:mt-6 xs:mt-4 flex items-center justify-center w-40 h-48" src={pic} alt="Profile Pic"/>
                 <div className="lg:mt-4 md:mt-4 px-8 pb-8 ">
                   <div className="font-name text-3xl mb-4 lg:pb-2 sm:text-center xs:mt-2 mx-auto">Sathwik Ch</div>
@@ -63,7 +66,7 @@ function About() {
             </div>
           </div>
         <div className="sm:w-1/2 md:w-1/2 lg:3/5 xs:pt-64 sm:pl-8 sm:py-0 border-gray-300 sm:mt-0 sm:text-left lg:w-full xs:p-10">
-          <div className="w-full lg:mt-20 md:mt-20">
+          <div className="w-full lg:mt-20 mt-20">
             <h1 className="whitespace-pre font-role font-bold lg:text-6xl md:text-4xl xs:text-4xl "> {name}</h1>
             <h2 className="whitespace-pre-wrap font-role mt-4 lg:text-4xl md:text-2xl xs:text-2xl lg:ml-4 md:ml-2 xs:ml-2">Here's who I am & what I do</h2>
             <div className="lg:w-3/4 md-w-full xs:w-full ">
@@ -73,8 +76,9 @@ function About() {
           </div>
         </div>
       </div>
+      <div id="resume" className="h-16"></div>
     </div>
-
+        <Resume/>
     </div>
   );
 }
